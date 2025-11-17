@@ -15,7 +15,7 @@ in Powershell, CmD, or Bash, write:
 ###
 
 ```powershell 
-git clone https://github.com/Kauan19-hub/Python.git
+git clone https://github.com/Kauan19-hub/CodeByPython.git
 ```
 
 ###
