@@ -1,7 +1,20 @@
-### ZYPHER - MINI CHATBOT VIRTUAL CRIADA POR MIM  ###
 class Robo():
-  def __init__(self, nome: str, idade: int, cidade: str, estado: str, personalidade: str, objetivo: str, gosto: str, saude: int = 100, fome: int = 0, sede: int = 0, cansaco: int = 0, sanidade: int = 0,
-               disposicao: int = 0):
+  # Variáveis tipadas
+  def __init__(self, nome: str,
+                             idade: int, 
+                             cidade: str, 
+                             estado: str, 
+                             personalidade: str, 
+                             objetivo: str, 
+                             gosto: str, 
+                             saude: int = 100, 
+                             fome: int = 0, 
+                             sede: int = 0, 
+                             cansaco: int = 0, 
+                             sanidade: int = 0,
+                            disposicao: int = 0):
+    
+    # Variáveis declaradas com self
     self.__nome = nome
     self.__idade = idade
     self.__cidade = cidade
@@ -15,7 +28,8 @@ class Robo():
     self.__cansaco = cansaco
     self.__disposicao = disposicao
     self.__sanidade = sanidade
-    
+  
+  # Definições
   def set_saude(self, valor: int):
      self.__saude = valor
      
@@ -28,7 +42,7 @@ class Robo():
   def get_disposicao(self):
     return self.__disposicao
     
-  ### APRESENTAÇÃO ###  
+# Apresentação
   def saudacoes(self):
     saudacao = f"Olá, dev! Me chamo {self.__nome}, tenho {self.__idade} meses de idade, nasci em {self.__cidade} - {self.__estado}, e estou aqui para conversar, e compartilhar minhas capacidades e funções com vocês! Meu objetivo principal é a {self.__objetivo}, e possuo uma personalidade bastante {self.__personalidade} e admiro muito o {self.__gosto} com as pessoas.  "
     print(saudacao)
@@ -56,8 +70,10 @@ class Robo():
     print(f"Cansaço: {self.__cansaco}; ")
     print(f"Disposição: {self.__disposicao}; ")
 
+# Valores das variáveis
 personagem = Robo(nome = "Zypher", idade = 2, cidade = "Campinas", estado = "SP", personalidade = "interativa", objetivo = "interagir", gosto = "acolhimento")
 
+# Funções chamadas abaixo para o funcionamento do código
 personagem.saudacoes()
 personagem.esportes()
 personagem.estudar()
